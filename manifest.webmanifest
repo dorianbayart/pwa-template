@@ -1,0 +1,17 @@
+{
+  "short_name": "PWA Template",
+  "name": "PWA Template",
+  "theme_color": "#6f03f4",
+  "background_color": "#EEEEEE",
+  "display": "fullscreen",
+  "scope": "/",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/pwa.png",
+      "type": "image/png",
+	  "sizes": "any"
+    }
+  ],
+  "start_url": "index.html?utm_source=homescreen"
+}
