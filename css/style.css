@@ -3,7 +3,7 @@ body {
 	flex-flow: column;
 	height: -webkit-fill-available;
 	margin: 0;
-	background-color: #EEE;
+	background-color: #9F92B6;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.6em;
 	color: #020202
@@ -11,7 +11,7 @@ body {
 
 #shell-header {
 	height: 64px;
-	background-color: #d0c2e8;
+	background-color: #D0C2E8;
 	display: flex;
     padding: 0 16px;
 	font-family: 'Roboto', sans-serif;
@@ -38,6 +38,7 @@ body {
 main {
 	display: flex;
 	flex-grow: 1;
+	background-color: #EEE;
 }
 
 button {
@@ -61,6 +62,7 @@ button > i {
 footer {
 	display: flex;
 	font-size: 0.6em;
+	background-color: #EEE;
 }
 footer > a {
 	display: flex;
