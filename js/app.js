@@ -9,6 +9,10 @@ window.addEventListener('load', function () {
 	
 	}
 	handleStateChange();
+	
+	document.getElementById("addButton").addEventListener("click", function(){
+		add();
+	});
 });
 
 window.addEventListener('online', handleStateChange);
@@ -20,4 +24,8 @@ function handleStateChange() {
 	var label = navigator.onLine ? 'Online' : 'Offline';
 	var color = navigator.onLine ? 'color-green' : 'color-red';
 	connexionStatusTarget.innerHTML = '<i class="material-icons ' + color + '">' + materialIcon + '</i><span class="label">' + label + '</span>';
+}
+
+function add() {
+	console.log('Add button clicked');
 }

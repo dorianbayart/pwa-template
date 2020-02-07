@@ -6,7 +6,8 @@ var FILES_TO_CACHE = [
 	'/js/app.js',
 	'/img/pwa.png',
 	'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500&display=swap',
-	'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap'
+	'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap',
+	'https://unpkg.com/modern-css-reset/dist/reset.min.css'
 ];
 
 // Start the service worker and cache all of the app's shell content
@@ -51,9 +52,11 @@ self.addEventListener('fetch', function(event) {
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.match(event.request).then(function(response) {
         var fetchPromise = fetch(event.request).then(function(networkResponse) {
-          cache.put(event.request, networkResponse.clone());
-		  console.log('[ServiceWorker] Cache updated', networkResponse.clone());
-          return networkResponse;
+			var clone = networkResponse.clone();
+			cache.put(event.request, clone);
+			if(clone.url && clone.url !== "")
+				console.log('[ServiceWorker] Cache updated', clone.url);
+			return networkResponse;
         });
         return response || fetchPromise;
       })
