@@ -9,6 +9,7 @@ body {
 	color: #020202
 }
 
+/* Header */
 #shell-header {
 	height: 64px;
 	background-color: #D0C2E8;
@@ -16,6 +17,7 @@ body {
     padding: 0 16px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
+	font-size: 1.2em;
 	color: #222;
 }
 
@@ -38,13 +40,33 @@ body {
 	margin-left: 8px;
 }
 
+/* Main */
 main {
 	display: flex;
+	flex-direction: column;
 	flex-grow: 1;
 	background-color: #EEE;
 }
+/* Online indicator */
+main #connexion_status {
+    display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	font-size: 0.8em;
+}
 
-button {
+main #connexion_status i.material-icons {
+	margin: 4px;
+}
+main #connexion_status .label {
+}
+/* Camera */
+main #camera {
+	display: none;
+}
+
+/* FAB */
+main button {
 	width: 64px;
 	height: 64px;
 	border-radius: 48px;
@@ -62,6 +84,7 @@ button > i {
 	flex: auto;
 }
 
+/* Footer */
 footer {
 	display: flex;
 	font-size: 0.6em;
@@ -77,4 +100,12 @@ footer > * > i.material-icons {
 	display: flex;
 	align-items: center;
 	margin: 0 4px;
+}
+
+/* Colors */
+.color-green {
+	color: #509556;
+}
+.color-red {
+	color: #AF4448;
 }

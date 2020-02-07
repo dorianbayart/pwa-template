@@ -10,7 +10,7 @@
     {
       "src": "img/pwa.png",
       "type": "image/png",
-	  "sizes": "any"
+	  "sizes": "384x144"
     }
   ],
   "start_url": "index.html?utm_source=homescreen"

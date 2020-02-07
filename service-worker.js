@@ -4,7 +4,9 @@ var FILES_TO_CACHE = [
 	'/index.html',
 	'/css/style.css',
 	'/js/app.js',
-	'/img/pwa.png'
+	'/img/pwa.png',
+	'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500&display=swap',
+	'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap'
 ];
 
 // Start the service worker and cache all of the app's shell content
@@ -18,7 +20,7 @@ self.addEventListener('install', function (e) {
 	self.skipWaiting();
 });
 
-// Check if server worker is activated
+// Check if service worker is activated
 self.addEventListener('activate', function (e) {
   console.log('[ServiceWorker] Activate');
   // Delete old static cache
@@ -44,11 +46,13 @@ self.addEventListener('activate', function (e) {
 	);
 });*/
 self.addEventListener('fetch', function(event) {
+  console.log('[ServiceWorker] Fetch', event.request.url);
   event.respondWith(
     caches.open(CACHE_NAME).then(function(cache) {
       return cache.match(event.request).then(function(response) {
         var fetchPromise = fetch(event.request).then(function(networkResponse) {
           cache.put(event.request, networkResponse.clone());
+		  console.log('[ServiceWorker] Cache updated', networkResponse.clone());
           return networkResponse;
         });
         return response || fetchPromise;
