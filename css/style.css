@@ -77,7 +77,7 @@ main button {
 	align-items: center;
 }
 button > i {
-	margin: auto;
+	width: 100%;
 }
 
 /* Footer */
