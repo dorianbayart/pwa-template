@@ -62,7 +62,7 @@ main #connexion_status .label {
 }
 /* Camera */
 main #camera {
-	display: none;
+	/*display: none;*/
 }
 
 /* FAB */
