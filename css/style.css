@@ -69,6 +69,7 @@ main button {
 	border: 0;
 	background-color: #AABB96;
 	color: inherit;
+	font: unset;
 	position: absolute;
 	bottom: 16px;
 	right: 16px;
