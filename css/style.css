@@ -23,14 +23,12 @@ body {
 
 #shell-header a#logo {
 	display: flex;
-    align-self: center;
-    width: 48px;
+	align-self: center;
+	width: 48px;
 	height: 48px;
 }
 
 #shell-header a#logo img {
-	width: auto;
-	height: 16px;
 	margin: auto;
 }
 
