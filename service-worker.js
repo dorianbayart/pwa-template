@@ -1,7 +1,8 @@
 var CACHE_NAME = 'pwa-template-v0';
 var FILES_TO_CACHE = [
 	'/',
-	'/index.html',
+	'./',
+	'index.html',
 	'/css/style.css',
 	'/js/app.js',
 	'/img/pwa.png',
