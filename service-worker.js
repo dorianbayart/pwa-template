@@ -8,7 +8,7 @@ var FILES_TO_CACHE = [
 	'/img/pwa.png',
 	'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300,400,500&display=swap',
 	'https://fonts.googleapis.com/icon?family=Material+Icons&display=swap',
-	'https://unpkg.com/modern-css-reset/dist/reset.min.css'
+	'https://unpkg.com/modern-css-reset@1.1.0/dist/reset.min.css'
 ];
 
 // Start the service worker and cache all of the app's shell content
