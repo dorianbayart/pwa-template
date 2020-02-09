@@ -87,6 +87,7 @@ footer {
 	display: flex;
 	font-size: 0.6em;
 	background-color: #EEE;
+	border-top: 2px solid #EEE;
 }
 footer > a {
 	display: flex;
