@@ -30,7 +30,7 @@ body {
 	height: 64px;
 	background-color: #D0C2E8;
 	display: flex;
-    padding: 0 16px;
+    	padding: 0 16px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 1.6rem;
@@ -60,7 +60,7 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	background-color: #EEE;
-	padding-bottom: 48px;
+	padding-bottom: 64px;
 }
 /* Online indicator */
 main #connexion_status {
