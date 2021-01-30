@@ -60,7 +60,7 @@ main {
 	flex-direction: column;
 	flex-grow: 1;
 	background-color: #EEE;
-	margin-bottom: 48px;
+	padding-bottom: 48px;
 }
 /* Online indicator */
 main #connexion_status {
