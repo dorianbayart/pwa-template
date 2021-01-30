@@ -7,10 +7,9 @@ body {
 	font-size: 1.6rem;
 	color: #020202
 }
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1280px) {
 	body {
-		font-size: 1.0rem;
+		font-size: 1.4rem;
 	}
 }
 @media screen and (max-width: 860px) {
@@ -18,11 +17,13 @@ body {
 		font-size: 1.2rem;
 	}
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 640px) {
 	body {
-		font-size: 1.4rem;
+		font-size: 1.0rem;
 	}
 }
+
+
 
 /* Header */
 #shell-header {
